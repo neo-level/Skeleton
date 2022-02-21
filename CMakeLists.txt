@@ -3,4 +3,4 @@ project(Skeleton)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Skeleton main.cpp)
+add_executable(Skeleton "Source files/main.cpp" "Header files/Game.h")
