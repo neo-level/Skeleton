@@ -19,6 +19,9 @@ public:
 
 	void RunLoop();
 
+	/**
+	 * Shuts down the game.
+	 */
 	void Shutdown();
 private:
 
