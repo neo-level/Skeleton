@@ -4,6 +4,8 @@
 
 #include "Game.h"
 
+#include "SDL/SDL.h"
+
 Game::Game()
 {
 	Window = nullptr;
