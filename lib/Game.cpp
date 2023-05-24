@@ -11,7 +11,6 @@ Game::Game()
 	Window = nullptr;
 	IsRunning = false;
 }
-
 bool Game::Initialize()
 {
 	if (int sdlResult{ SDL_Init(SDL_INIT_VIDEO) }; sdlResult != 0)
@@ -31,7 +30,12 @@ bool Game::Initialize()
 }
 void Game::RunLoop()
 {
-
+	while (IsRunning)
+	{
+		ProcessInput();
+		UpdateGame();
+		GenerateOutput();
+	}
 }
 void Game::Shutdown()
 {

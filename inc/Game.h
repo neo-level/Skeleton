@@ -17,6 +17,9 @@ public:
 	 */
 	bool Initialize();
 
+	/**
+	 * Runs the game loop until the game is over. eg. IsRunning is false.
+	 */
 	void RunLoop();
 
 	/**
